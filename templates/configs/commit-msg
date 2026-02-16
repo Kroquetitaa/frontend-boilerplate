@@ -1,0 +1,15 @@
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+echo "${RED}⧗  Commits should follow the conventional commit format: ${GREEN}type(scope?): subject${NC}"
+echo "${YELLOW}  'scope' is optional${NC}"
+echo "${YELLOW}  'Subject' must start with an uppercase letter.${NC}"
+echo "${GREEN}   Allowed types: feat, fix, docs, chore, style, refactor, ci, test, revert, perf, vercel${NC}"
+echo "${CYAN}   Example: 'feat: Add email validation'"
+echo "${CYAN}   More info: https://www.conventionalcommits.org/en/v1.0.0/${NC}"
+echo ""
+
+npx --no-install commitlint --edit "$1"
