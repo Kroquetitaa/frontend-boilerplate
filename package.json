@@ -1,5 +1,5 @@
 {
-  "name": "frontend-boilerplate",
+  "name": "frontend-boilerplate-cli",
   "version": "1.0.0",
   "description": "A modern CLI to scaffold frontend projects with React, TypeScript, Vite and 7 production-ready architectures",
   "type": "module",
